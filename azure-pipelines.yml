@@ -2,7 +2,9 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+   name: OrigamiPlatform
+   demands: 
+   - Agent.OS -equals Linux
 
 steps:
 - task: UseNode@1
